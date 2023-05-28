@@ -1,2 +1,17 @@
-package com.sam.Reggie.controller;public class DishFlavorController {
+package com.sam.Reggie.controller;
+
+import com.sam.Reggie.server.DishFlavorService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@Slf4j
+@RestController
+@RequestMapping("/")
+public class DishFlavorController {
+    @Autowired
+    private DishFlavorService dishFlavorService;
+
+
 }

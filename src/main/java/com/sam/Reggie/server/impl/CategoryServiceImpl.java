@@ -7,5 +7,5 @@ import com.sam.Reggie.server.CategoryService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CategroyServiceImpl extends ServiceImpl<CategoryMapper, Category> implements CategoryService {
+public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> implements CategoryService {
 }

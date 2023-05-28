@@ -1,4 +1,4 @@
-package com.itheima.reggie.entity;
+package com.sam.Reggie.entity;
 
 import lombok.Data;
 import java.time.LocalDateTime;
@@ -22,8 +22,8 @@ public class User implements Serializable {
     private String name;
 
 
-    //手机号
-    private String phone;
+    //email
+    private String email;
 
 
     //性别 0 女 1 男

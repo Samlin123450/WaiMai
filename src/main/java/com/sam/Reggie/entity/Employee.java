@@ -1,4 +1,4 @@
-package com.itheima.reggie.entity;
+package com.sam.Reggie.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -29,9 +29,10 @@ public class Employee implements Serializable {
     private String idNumber;//身份证号码
 
     private Integer status;
-
+    @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;
 
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private LocalDateTime updateTime;
 
     @TableField(fill = FieldFill.INSERT)

@@ -1,2 +1,10 @@
-package com.sam.Reggie.mapper;public interface UserMapper {
+package com.sam.Reggie.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.sam.Reggie.entity.User;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface UserMapper extends BaseMapper<User> {
+
 }

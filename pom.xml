@@ -3,6 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -10,10 +12,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.itheima</groupId>
-    <artifactId>reggie_take_out</artifactId>
+    <artifactId>WaiMai</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <java.version>1.8</java.version>
+
+            <maven.compiler.source>1.8</maven.compiler.source>
+            <maven.compiler.target>1.8</maven.compiler.target>
+
     </properties>
     <dependencies>
 
@@ -45,6 +50,11 @@
             <artifactId>lombok</artifactId>
             <version>1.18.20</version>
         </dependency>
+<!--        send email-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -62,12 +72,18 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
+            <version>8.0.23</version>
         </dependency>
 
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.23</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.2</version>
         </dependency>
 
     </dependencies>
@@ -80,6 +96,24 @@
                 <version>2.4.5</version>
             </plugin>
         </plugins>
+
+<!--            <resources>-->
+<!--                <resource>-->
+<!--                    <directory>src/main/java</directory>-->
+<!--                    <includes>-->
+<!--                        <include>**/*.xml</include>-->
+<!--                    </includes>-->
+<!--                    <filtering>true</filtering>-->
+<!--                </resource>-->
+<!--                <resource>-->
+<!--                    <directory>src/main/resources</directory>-->
+<!--                    <includes>-->
+<!--                        <include>**.*</include>-->
+<!--                    </includes>-->
+<!--                </resource>-->
+<!--            </resources>-->
+
+
     </build>
 
 </project>
