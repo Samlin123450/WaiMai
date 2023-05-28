@@ -33,5 +33,5 @@ mybatis-plus:
 
 
 riggie:
-  path: D:\idea2\WaiMai\src\main\resources\backend\images\dishImages/
-#  path: /usr/local/img
+#  path: D:\idea2\WaiMai\src\main\resources\backend\images\dishImages/
+  path: /www/WaiMai/src/main/resource/images/dishImages/
