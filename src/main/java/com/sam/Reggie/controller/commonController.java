@@ -40,7 +40,8 @@ public class commonController {
         String filename = UUID.randomUUID().toString()+"."+split[length-1];
 
         try{
-            file.transferTo(new File(basePath+filename));
+
+            file.transferTo(new File(basePath+"\\"+filename));
         }catch (IOException e) {
             throw new RuntimeException(e);
         }
